@@ -1,0 +1,16 @@
+.venv/
+.git/
+__pycache__/
+*.pyc
+data/
+screenshots/
+mlruns/
+mlflow.db
+.env
+.env.*
+*.bak
+*.pem
+*.key
+.pytest_cache/
+.vscode/
+mlflow.db-*

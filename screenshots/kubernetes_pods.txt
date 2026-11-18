@@ -1,0 +1,2 @@
+﻿NAME                         READY   STATUS    RESTARTS   AGE
+modelserve-dd46446b6-pz8jn   1/1     Running   0          25m

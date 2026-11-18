@@ -1,0 +1,17 @@
+name: Security contact request (NO vulnerability details)
+description: Ask for a private reporting route; never disclose vulnerabilities in this public form
+title: "security-contact: request private reporting channel"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **PUBLIC ISSUE. Do not describe the vulnerability here.**
+        First check this repository's Security tab for private vulnerability reporting.
+        Use this form only if private reporting is not available.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Confirm public safety
+      options:
+        - label: I am requesting only a private contact channel and have NOT included vulnerability details, exploit steps, credentials, or proof of concept.
+          required: true

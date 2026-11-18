@@ -1,0 +1,25 @@
+name: Usage question
+description: Ask a focused setup or workflow question without sensitive data
+title: "question: "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Which documented step or component do you need help with?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: What have you tried?
+      description: Include safe commands or sanitized errors, and mention your environment.
+    validations:
+      required: false
+  - type: checkboxes
+    id: safeguards
+    attributes:
+      label: Submission check
+      options:
+        - label: I have not shared credentials, sensitive information, or vulnerability details.
+          required: true

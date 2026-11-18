@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: modelserve
+  labels:
+    app: modelserve
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: modelserve
+  template:
+    metadata:
+      labels:
+        app: modelserve
+    spec:
+      containers:
+        - name: modelserve
+          image: modelserve:0.1.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10

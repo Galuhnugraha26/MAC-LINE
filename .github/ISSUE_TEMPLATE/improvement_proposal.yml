@@ -1,0 +1,32 @@
+name: Improvement proposal
+description: Suggest a focused change within the existing MAC-LINE scope
+title: "enhancement: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Current limitation
+      description: Describe the concrete gap or maintenance need.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Keep it as small and testable as possible.
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Evidence or expected verification
+      description: How would we tell whether this improvement works?
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope acknowledgment
+      options:
+        - label: I understand that proposing a feature does not imply acceptance and major scope changes require maintainer approval.
+          required: true
