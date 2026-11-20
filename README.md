@@ -1,7 +1,7 @@
 
-# MAC-LINE
+# MLOps Lab 1 - Model Service on Kubernetes
 
-![MAC-LINE Logo](assets/mac-line-logo.png)
+
 
 *A Cloud-Native Machine Learning Inference Pipeline*
 
@@ -11,7 +11,7 @@ Python | Scikit-learn | MLflow | FastAPI | Docker | Kubernetes | HPA
 
 ## Overview
 
-MAC-LINE is a lightweight machine learning serving pipeline that combines model training, experiment tracking, containerized inference, and Kubernetes autoscaling.
+This Lab 1 project is a lightweight machine learning serving pipeline that combines model training, experiment tracking, containerized inference, and Kubernetes autoscaling.
 
 The implementation uses the AI4I 2020 Predictive Maintenance Dataset to demonstrate binary machine-failure classification in a simulated manufacturing context.
 
@@ -112,7 +112,7 @@ The training pipeline saves the inference artifact to `model/model.joblib` and l
 
 ## MLflow Experiment Tracking
 
-MAC-LINE uses MLflow with a local SQLite backend for experiment tracking.
+This project uses MLflow with a local SQLite backend for experiment tracking.
 
 Run training commands and the MLflow server from the repository root so both use the same `mlflow.db` database.
 
@@ -394,7 +394,7 @@ The dataset is synthetic and represents simulated industrial operating condition
 
 ## Limitations
 
-MAC-LINE is a local MLOps reference implementation.
+This repository is a local MLOps reference implementation.
 
 The classification model was evaluated using synthetic data and has not been validated on physical industrial equipment.
 
